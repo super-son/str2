@@ -7,14 +7,17 @@ import numpy as np
 import joblib
 import warnings
 warnings.filterwarnings('ignore')
+import pickle
 
+
+with open('prac2_model.pkl', 'rb') as handle:
+    loaded_model = pickle.load(handle)
+     
 st.set_page_config(
      page_title='Streamlit cheat sheet',
      layout="centered",
     #  initial_sidebar_state="expanded",
 )
-
-loaded_model = with open('prac2_model.pkl', 'rb') as handle
 
 with st.sidebar:
     st.image("ggilook.PNG")
