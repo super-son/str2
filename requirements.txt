@@ -1,6 +1,10 @@
-streamlit
-pandas 
-numpy 
 joblib
-warnings
+matplotlib
+numpy
+pandas
+plotly
 ply
+ptyprocess
+seaborn
+streamlit
+scikit-learn
