@@ -10,7 +10,7 @@ warnings.filterwarnings('ignore')
 import pickle
 
 
-with open('prac2_model.pkl', 'rb') as f:
+with open('prac3_model.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
      
 st.set_page_config(
