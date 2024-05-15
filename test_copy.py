@@ -10,8 +10,8 @@ warnings.filterwarnings('ignore')
 import pickle
 
 
-with open('prac2_model.pkl', 'rb') as handle:
-    loaded_model = pickle.load(handle)
+with open('prac2_model.pkl', 'rb') as f:
+    loaded_model = pickle.load(f)
      
 st.set_page_config(
      page_title='Streamlit cheat sheet',
