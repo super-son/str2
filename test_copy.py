@@ -7,6 +7,13 @@ import numpy as np
 import joblib
 import warnings
 warnings.filterwarnings('ignore')
+import os
+
+# 현재 작업 디렉토리의 절대 경로를 가져옵니다.
+current_directory = os.getcwd()
+
+# 파일 이름과 현재 디렉토리를 결합하여 절대 경로를 생성합니다.
+absolute_path = os.path.join(current_directory, "prac2_model.pkl")
 
 st.set_page_config(
      page_title='Streamlit cheat sheet',
@@ -14,7 +21,7 @@ st.set_page_config(
     #  initial_sidebar_state="expanded",
 )
 
-loaded_model = joblib.load('prac2_model.pkl')
+loaded_model = joblib.load(absolute_path)
 
 with st.sidebar:
     st.image("ggilook.PNG")
