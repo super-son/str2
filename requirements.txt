@@ -8,5 +8,4 @@ ptyprocess
 seaborn
 streamlit
 scikit-learn
-openai
-message
+
