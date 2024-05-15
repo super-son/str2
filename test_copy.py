@@ -48,7 +48,7 @@ info8 = container2.text_input('여행스타일5',1, help='기쁘게:1, 슬프게
 info9 = container2.text_input('여행스타일6',2, help='기쁘게:1, 슬프게:2,행복하게:3, 걱정없이:4')
 info10 = container2.text_input('여행스타일7',1, help='기쁘게:1, 슬프게:2,행복하게:3, 걱정없이:4')
 info11 = container2.text_input('여행스타일8',2, help='기쁘게:1, 슬프게:2,행복하게:3, 걱정없이:4')
-traveler_list = [[info1,info2,info3,info4,info5,info6,info7,info8,info9,info10,info11]]
+traveler_list = [info1,info2,info3,info4,info5,info6,info7,info8,info9,info10,info11]
 y_pred = loaded_model.predict(traveler_list)
 y_pred_proba = loaded_model.predict_proba(traveler_list)
 top_10_classes = np.argsort(-y_pred_proba, axis=1)[:, :10]
